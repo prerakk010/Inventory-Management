@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Inventory</title>
+    </head>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/style.css '}">
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css '%}">
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(47, 109, 189);">
+            <p><a class="navbar-brand" href="http://127.0.0.1:8000/" >Inventory Management</a></p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              
+            </div>
+          </nav>
+
+          <div class="container">
+              {% block body %}
+
+
+              {% endblock %}
+          </div>
+
+    </body>
+
+</html>
